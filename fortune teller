@@ -1,0 +1,61 @@
+print("Hello there!")
+name = input("What's your name? ")
+print()
+print(name, ", do you want to know what the stars say about your future?")
+choice = input("Type 'y' for yes and 'n' for no. ")
+
+while choice == 'y':
+    symbol = input('Choose a symbol: star, moon, sun, or cloud. ')
+
+    if symbol == 'Star' or symbol == 'star' or symbol == 'STAR' or symbol == 'Star.' or symbol == 'Cloud' or symbol == 'cloud' or symbol == 'CLOUD' or symbol == 'Cloud.':
+
+        while True:
+
+            color = input("Pick a color: Red or Yellow. ")
+
+            if color == 'Red' or color == 'red' or color == 'RED' or color == 'Red.' or color == 'red.':
+                print()
+                print("Attitude is a little thing that makes a big difference.")
+                print("Thank you for playing! Have a great day ♡.")
+                exit()
+
+            if color == 'Yellow' or color == 'yellow' or color == 'Yellow.' or color == 'YELLOW' or color == 'yellow':
+                print()
+                print("Nothing great was ever achieved without enthusiasm")
+                print("Thank you for playing! Have a great day ♡.")
+                exit()
+
+            else:
+                print()
+                print("Invalid option. Please try again.")
+
+    elif symbol == 'moon' or symbol == 'MOON' or symbol == 'Moon' or symbol == 'Moon.' or symbol == 'moon.' or symbol == 'sun' or symbol == 'SUN' or symbol == 'Sun' or symbol == 'Sun.' or symbol == 'sun.':
+
+        while True:
+            color = input("Pick a color: Pink or Blue. ")
+
+            if color == 'pink' or color == 'PINK' or color == 'Pink' or color == 'Pink.' or color == 'pink.':
+                print()
+                print("In dreams and in love there are no impossibilities.")
+                print("Thank you for playing! Have a great day ♡.")
+                exit()
+
+            if color == 'Blue' or color == 'blue' or color == 'BLUE' or color == 'blue.' or color == 'Blue.':
+                print()
+                print("It could be better, but it's good enough. ")
+                print("Thank you for playing! Have a great day ♡.")
+                exit()
+
+            else:
+                print()
+                print("Invalid option. Please try again.")
+
+    else:
+        print()
+        print("Invalid option. Please try again.")
+        continue
+
+while choice == 'n':
+    print()
+    print("No worries! Maybe another time :).")
+    exit()
